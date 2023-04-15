@@ -141,3 +141,6 @@ const fetchData = async ()=>{
 
 main();
 
+
+
+SPA = Single page application

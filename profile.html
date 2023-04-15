@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Skills</title>
+    <style>
+      .user-skills {
+        font-family: Arial, sans-serif;
+        margin: 50px auto;
+        max-width: 600px;
+      }
+
+      .user-skills h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .user-skills ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .user-skills li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .skill-item {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        display: block;
+        height: 120px;
+        position: relative;
+        text-align: center;
+        width: 120px;
+      }
+
+      .skill-item::before {
+        background-color: #fff;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transform: skew(-45deg);
+        transform-origin: bottom;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .skill-item span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+
+      .skill-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .skill-level {
+        font-size: 14px;
+        font-style: italic;
+        margin-top: 22px;
+      }
+
+      .skill-item:nth-child(1) {
+        transform: rotate(-10deg);
+      }
+
+      .skill-item:nth-child(2) {
+        transform: rotate(-5deg);
+      }
+
+      .skill-item:nth-child(3) {
+        transform: rotate(0deg);
+      }
+
+      .skill-item:nth-child(4) {
+        transform: rotate(5deg);
+      }
+
+      .skill-item:nth-child(5) {
+        transform: rotate(10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="user-skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>
+          <div class="skill-item" style="transform: rotate(-10deg)">
+            <span class="skill-title">JavaScript</span>
+            <span class="skill-level">Expert</span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-item" style="transform: rotate(-5deg)">
+            <span class="skill-title">React</span>
+            <span class="skill-level">Advanced</span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-item" style="transform: rotate(0deg)">
+            <span class="skill-title">HTML/CSS</span>
+            <span class="skill-level">Intermediate</span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-item" style="transform: rotate(5deg)">
+            <span class="skill-title">Node.js</span>
+            <span class="skill-level">Advanced</span>
+          </div>
+        </li>
+        <li>
+          <div class="skill-item" style="transform: rotate(10deg)">
+            <span class="skill-title">MongoDB</span>
+            <span class="skill-level">Intermediate</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

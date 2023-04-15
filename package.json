@@ -18,10 +18,6 @@
   },
   "homepage": "https://github.com/santhoshabnie/teaching#readme",
   "dependencies": {
-    "axios": "^1.3.4",
-    "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.21"
+    "axios": "^1.3.4"
   }
 }
